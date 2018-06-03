@@ -1,0 +1,81 @@
+.picker-panel{
+
+    border: 1px solid #dcdfe6;
+    border-radius: 5px;
+    position: relative;
+}
+.picker-panel:hover{
+    border:1px solid #409eff;
+}
+.picker-panel:focus{
+     border:1px solid #409eff;
+ }
+.picker-panel .input{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width:174px;
+    /*padding-left: 30px;*/
+    height:32px;
+}
+.picker-panel .confirm-button{
+    position: fixed;
+    z-index: 1000;
+    bottom: 0;
+    width: 100vw;
+    border: 1px solid silver;
+    background: rgb(6,193,174);
+    background-clip: content-box;
+    color: white;
+    line-height: 7vh;
+    height: 7vh;
+}
+.date-panel{
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    bottom: 0;
+    z-index: 999;
+}
+.date-panel .header{
+    height: 20vh;
+    background: rgba(0,0,0,.2);
+
+}
+.date-panel .select-panel{
+    height: 80vh;
+    overflow: auto;
+    position: relative;
+}
+.picker-panel .input .rili{
+    display: inline-block;
+    position: absolute;
+    left: 8px;
+}
+.picker-panel .input .delete{
+    display: none;
+}
+.picker-panel .input:hover .delete{
+    position: absolute;
+    display: block;
+    right:8px;
+    color: #888888;
+    cursor: pointer;
+}
+.picker-panel .input input{
+    border: 0;
+    padding: 4px 30px;
+    outline: medium;
+    width: 174px;
+    /*display: inline-block;*/
+}
+.picker-panel .calendar{
+    position: absolute;
+}
+.picker-panel .calendar.under-input{
+    top:35px;
+
+}
+.picker-panel .calendar.above-input{
+    bottom: 35px;
+}
